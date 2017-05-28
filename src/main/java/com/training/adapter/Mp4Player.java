@@ -11,6 +11,6 @@ public class Mp4Player implements AdvancedMediaPlayer {
 
     @Override
     public void playMp4(String filename) {
-        System.out.println("Playing the sweet songs of the mp4.");
+        System.out.println("Playing the sweet songs of the mp4 file, " + filename + ".");
     }
 }

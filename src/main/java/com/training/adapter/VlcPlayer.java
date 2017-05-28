@@ -6,7 +6,7 @@ package com.training.adapter;
 public class VlcPlayer implements AdvancedMediaPlayer {
     @Override
     public void playVlc(String filename) {
-        System.out.println("Playing a lovely vlc song.");
+        System.out.println("Playing a lovely vlc song by the name of " + filename ".");
     }
 
     @Override
