@@ -4,7 +4,6 @@ package com.training.adapter;
  * Created by adame on 5/28/2017.
  */
 public class AudioPlayer implements MediaPlayer {
-    MediaAdapter mediaAdapter;
 
     @Override
     public void play(String audioType, String filename) {
@@ -12,8 +11,7 @@ public class AudioPlayer implements MediaPlayer {
             System.out.println("Jamming on the mp3!");
         }
         else if(audioType.equalsIgnoreCase("vlc") || audioType.equalsIgnoreCase("mp4")) {
-            mediaAdapter = new MediaAdapter(audioType);
-            mediaAdapter.play(audioType, filename);
+            new MediaAdapter().play(audioType,filename);
         }
         else {
             System.out.println("No music for you!");
