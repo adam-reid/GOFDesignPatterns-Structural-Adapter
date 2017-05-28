@@ -7,8 +7,6 @@ public class MediaAdapter implements MediaPlayer{
 
     @Override
     public void play(String audioType, String filename) {
-        //note: i don't like this implementation.. why would you allow this? you already did it
-        //in the constructor..
         if(audioType.equalsIgnoreCase("vlc")) {
             new VlcPlayer().playVlc(filename);
         }
